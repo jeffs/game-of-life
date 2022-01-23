@@ -1,18 +1,13 @@
 # Game of Life
 
-Following along with the Rust and WebAssembly book.
+Following along with the [Rust and WebAssembly book][book].
 
-## [Setup](https://rustwasm.github.io/docs/book/game-of-life/setup.html)
+See init.zsh for a record of what I've done so far.  From the book:
 
-```sh
-nvm use --lts   # v16.13.1
-npm install npm@latest -g
-cargo install wasm-pack cargo-generate
-cargo generate --git https://github.com/rustwasm/wasm-pack-template
-```
+> Anytime you make changes and want them reflected on http://localhost:8080/,
+> just re-run the wasm-pack build command within the wasm-game-of-life
+> directory.
 
-Cargo generate prompts you for the the Project Name:
+Rebuilding the Rust code this way automatically hot-reloads the page.
 
-```
-wasm-game-of-life
-```
+[book]: https://rustwasm.github.io/docs/book/introduction.html
